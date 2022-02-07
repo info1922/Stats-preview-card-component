@@ -1,0 +1,262 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: hsl(233, 47%, 7%);
+    font-size: 15px;
+    font-family:'Inter', sans-serif;
+    color: white;
+    width: 100%;
+
+    height: 100vh;
+
+
+}
+
+main {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: centers;
+    align-content: center;
+
+}
+
+.container {
+    margin: 0 auto;
+    width: 960px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    background-color: hsl(244, 38%, 16%);
+    border-radius: 0.5em;
+}
+
+.container-description {
+    width: 50%;
+    height: 100%;
+    padding: 2em 4em;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.title-card {
+    padding: 0 0 0.8em 0;
+    font-size: 2.1rem;
+    color: #fff;
+}
+
+span {
+    color: hsl(277, 64%, 61%);
+}
+
+.description-ph {
+    line-height: 1.8em;
+    color: hsla(0, 0%, 100%, 0.75);
+    margin: 0 0 1em 0;
+}
+
+.sc {
+    padding: 1em 0;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-family: 'Lexend Deca', sans-serif;
+    letter-spacing: 0.2em;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+.container-image {
+    width: 50%;
+}
+
+
+img {
+    border-radius:  0em 0.5em 0.5em 0;
+    width: 100%;
+    display: block;
+    filter: grayscale(80%) brightness(40%) sepia(200%) hue-rotate(-150deg) saturate(600%) contrast(0.7);
+}
+
+.description-ph {
+    text-align: left;
+}
+
+.section-description {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.section-description .section-cant:last-child {
+    text-transform: uppercase;
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: hsl(233, 47%, 7%);
+}
+
+a {
+    color: wheat;
+}
+
+@media (max-width: 960px) {
+
+    .container {
+        width: 100%;
+    }
+    .title-card {
+        font-size: 1.4rem;
+    }
+
+    .description-ph {
+        font-size: 14px;
+        
+    }
+
+    .sc-h {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 730px) {
+    body {
+        height: 100%;
+    }
+    main {
+        margin: 1em 0;
+    }
+    .container {
+        /* margin: 2em 0; */
+        width: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+    .container-description {
+        width: 100%;
+    }
+
+    .container-image {
+        width:100%;
+    }
+
+    img {
+        border-radius:  0.5em 0.5em 0em 0;
+        width: 100%;
+        display: block;
+    }
+
+    .section-description {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .title-card {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .description-ph {
+        margin: 0 0 1em 0;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .section-cant {
+        margin: 0 0 1em 0;
+    }
+
+    .sc-h {
+        font-size: 1.6rem;
+    }
+
+    .sc {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 400px) {
+    body {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+
+    }
+    footer {
+        align-items: center;
+        width: 300px;
+
+    }
+    main {
+        margin: 2em;
+    }
+    .container {
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+
+    .container-description {
+        width: 100%;
+    }
+
+    .container-image {
+        width:100%;
+    }
+
+    img {
+        border-radius:  0.5em 0.5em 0em 0;
+        width: 100%;
+        display: block;
+    }
+
+    .section-description {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .title-card {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+
+    .description-ph {
+        margin: 0 0 1em 0;
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .section-cant {
+        margin: 0 0 1em 0;
+    }
+
+    .sc-h {
+        font-size: 1.6rem;
+    }
+
+    .sc {
+        font-size: 0.8rem;
+    }
+}
